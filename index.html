@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<label for="checkbox">Toggle Dark</label>
+<input type="checkbox" name="class" id="checkbox" onclick="checkBox()"> <br>
+
+<label for="toggleLightMode">Toggle Light</label>
+<input type="checkbox" id = "toggleLightMode" onclick = "toggleLight()">
+
+    <!-- <h1 id="myh1"></h1>
+     <p id="para1"></p> -->
+    <!-- <h1 id = "usernameInput">Welcome</h1>
+     <label for="user">username: </label>
+     <input type="text" id="user"> <br><br>
+     <button id = "submit">Submit</button> -->
+
+    <div class="displaycircumference">
+        <h1 id="radius">Enter the radius of a circle:</h1>
+        <label for="user_input">Radius: </label>
+        <input type="text" id="user_input">
+        <button id="submitRadius">Submit</button>
+
+        <h1 id="displaytext"></h1>
+    </div>
+    <hr>
+    <h1>Counter</h1>
+    <p id="counter">0</p><br>
+    <div id="btns">
+        <button id="decreaseBtn">Decrease</button>
+        <button id="resetBtn">Reset</button>
+        <button id="increaseBtn">Increase</button>
+        <br>
+    </div>
+    <br>
+    <hr>
+    <input type="checkbox" id="myCheckBox">
+    <label for="myCheckBox">Subscribe</label><br><br>
+
+    <input type="radio" name="card" id="visacardBtn">
+    <label for="visacardBtn">Visa</label><br>
+
+    <input type="radio" name="card" id="mastercardBtn">
+    <label for="mastercardBtn">MasterCard</label><br>
+
+    <input type="radio" name="card" id="paypalBtn">
+    <label for="paypalBtn">PayPal</label>
+    <br><br>
+
+    <button id="displaychosen">Submit</button>
+
+    <p id="sub"></p>
+    <p id="paymentresult"></p>
+    <hr>
+    <button id="rollRand">Roll</button>
+    <p id="rand1"></p>
+    <p id="rand2"></p>
+    <p id="rand3"></p>
+    <hr>
+    <h1> Check Your Current Level With Your Matric Number:</h1>
+    <label for="checkStudent">Enter You Matric Number: </label>
+    <input type="text" id="checkStudent"> <br>
+    <p id="displayLevel"></p>
+    <button id="matric">Submit</button>
+
+
+    <hr>
+    <br><br>
+<div id="convertTemp">
+    <label for="user_tempInput" class ="topClass">Temperature Conversion:</label> <br> <br> <br>
+    <input type="number" value = "0" id="user_tempInput"> <br> <br>
+
+    <input type="radio" name="convert" id="celsius">
+    <label for="celsius" class = "class">Celsius ➡ Fahrenheit</label> <br> <br>
+
+    <input type="radio" name="convert" id="fahrenheit">
+    <label for="fahrenheit" class = "class">Fahrenheit ➡ Celsius</label>
+    <br> <br> <br>
+    <p id="result"></p>
+    <button type="button" onclick= "convert()" class = "bttn">SUBMIT</button>    
+</div>
+<br>
+<hr>
+<!--DICE ROLLER GAME-->
+<div id="diceGame">
+<h1 class = "dice">DICE ROLLER</h1>
+<label for="numberOfRoll"># of Dice: </label>
+<input type="number" min="1" value = "1" id="numberOfRoll">
+<button onclick="diceRoller()" class = "btnRoll">Roll Dice</button>
+<div id="diceResult"></div>
+<div id="diceImg"><br></div>
+</div>
+<hr>
+
+<h1>Working with Element selectors</h1>
+<div class="fruits">Banana</div>
+<div class="fruits">Orange</div>
+<div class="fruits">Apple</div>
+<div class="fruits">Pineapple</div>
+
+<!--Working woth query selectors-->
+<h1 class="select">hello</h1>
+<h1 class="select">Word</h1>
+<h1 class="select">Vocabulary</h1>
+<h1 class="select">Diction</h1>
+
+<!--DOM NAVIGATION-->
+<ul id="cars">
+    <li>Toyota</li>
+    <li>Tesla</li>
+    <li>Rolls Royce</li>
+</ul>
+
+<ul id="planes">
+    <li>Helicopter</li>
+    <li>Airplanes</li>
+    <li>Jets</li>
+</ul>
+<hr> <br>
+
+<div id="box1" class = "box">Box 1 </div>
+<div id="box2" class = "box">Box 2<br></div>
+<div id="box3" class = "box">Box 3</div>
+<div id="box4" class = "box">Box 4</div><br>
+<hr>
+
+<h1 id="eventListeners">
+    WORKING WITH EVENT LISTENERS
+</h1>
+
+<div id="clickBox">
+    Click Me 😀
+</div>
+
+
+<hr>
+<div id="clickBox2">
+    <p>Move me around 😀</p>
+    <p class = "moveId"></p>
+</div>
+<br>
+<button id="classList">
+    Button 1
+</button>
+
+<script src="Js.js" defer></script>   
+</body>
+
+</html>
